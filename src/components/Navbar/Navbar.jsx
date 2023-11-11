@@ -25,9 +25,9 @@ function Navbar() {
           <button className='nav-button close' onClick={closeNav}><FontAwesomeIcon icon={faX} /></button>
           <ul className='nav-list'>
             <li onClick={closeNav} className={`${toggleNav ? 'from-right active' : 'from-right'}`}><a href="#">Home</a></li>
-            <li onClick={closeNav} className={toggleNav ? 'from-left active' : 'from-left'}><a href="skills">Skills</a></li>
-            <li onClick={closeNav} className={`${toggleNav ? 'from-right active' : 'from-right'}`}><a href="projects">Projects</a></li>
-            <li onClick={closeNav} className={toggleNav ? 'from-left active' : 'from-left'}><a href="contact">Contact</a></li>
+            <li onClick={closeNav} className={toggleNav ? 'from-left active' : 'from-left'}><a href="#skills">Skills</a></li>
+            <li onClick={closeNav} className={`${toggleNav ? 'from-right active' : 'from-right'}`}><a href="#projects">Projects</a></li>
+            <li onClick={closeNav} className={toggleNav ? 'from-left active' : 'from-left'}><a href="#contact">Contact</a></li>
           </ul>
         </div>
         <div className='social-icons'>
