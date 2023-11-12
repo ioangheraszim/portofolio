@@ -1,0 +1,16 @@
+@use "./fonts" as *;
+@use "./variables" as *;
+
+.section-title {
+    margin: 2rem;
+    font-family: $montserrat;
+    color: $accent;
+    font-size: 3rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .section-title {
+      text-align: start;
+    }
+}

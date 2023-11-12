@@ -1,169 +1,172 @@
 @use "../SCSS/" as *;
 
 header {
-    backdrop-filter: blur(10px);
-    background: rgba(33, 36, 40, 0.4);
-    padding: 20px;
-    max-width: 100vw;
-    width: 100%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    overflow-x: visible;
-    z-index: 9999;
+  backdrop-filter: blur(10px);
+  background: rgba(33, 36, 40, 0.4);
+  padding: 20px;
+  max-width: 100vw;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  overflow-x: visible;
+  z-index: 9999;
 }
 
 .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .nav-button {
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+    background: none;
+    color: $secondary;
+    cursor: pointer;
+  }
+
+  .close {
+    padding: 1.5rem;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    margin-left: auto;
+  }
 
-    .nav-button {
-        font-size: 1.5rem;
-        outline: none;
-        border: none;
-        background: none;
-        color: $secondary;
-        cursor: pointer;
+  .open {
+    margin-left: 0.5rem;
+  }
+
+  .logo-container {
+    a {
+      color: $secondary;
+     
     }
+  }
+  .nav-container {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    height: 100vh;
+    width: 100vw;
+    transition: transform 0.3s ease-in-out;
 
-    .close {
-        padding: 1.5rem;  
-        display: flex;
-        margin-left: auto;
-    }
-    
-    .open {
-        margin-left: .5rem; 
-    }
-
-    .nav-container {
-        text-align: center;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translateX(100%);
-        height: 100vh;
-        width: 100vw;
-        transition: transform 0.3s ease-in-out;
-
-        .nav-list {
-            
-            li {
-                padding: 2rem;
-                border-bottom: 1px solid $secondary;
-                border-left: none;
-                border-right: none;
-                a {      
-                    padding: 2rem; 
-                    color: $secondary;
-                }
-            }
-
-            li:hover {
-                background-color: $secondary;
-
-                a {
-                    color: $primary;
-                }
-            }
-
-            @media (min-width: 768px) {
-                li {
-                    padding: 1rem;
-                    border: none;
-                }
-
-                li:hover {
-                    background-color: transparent;
-
-                    a {
-                        color: $accent;
-                        transition: font-weight ease-in-out 300ms;
-                    }
-                }
-            }
-
-            .from-right.active {
-                animation: fadeInRight 1s ease-in forwards;
-            }
-
-            @keyframes fadeInRight {
-                from {
-                  opacity: 0;
-                  transform: translateX(100%);
-                }
-                to {
-                  opacity: 1;
-                  transform: translateX(0);
-                }
-              }
-
-            .from-left.active {
-                animation: fadeInLeft 1s ease-in backwards;
-            }
-
-            @keyframes fadeInLeft {
-                from {
-                  opacity: 0;
-                  transform: translateX(-100%);
-                }
-                to {
-                  opacity: 1;
-                  transform: translateX(0);
-                }
-              }
+    .nav-list {
+      li {
+        padding: 2rem;
+        border-bottom: 1px solid $secondary;
+        border-left: none;
+        border-right: none;
+        a {
+          padding: 2rem;
+          color: $secondary;
         }
-    }
+      }
 
-    @media (min-width: 768px) {
-        .nav-container {
-            position: static;
-            height: auto;
-            width: auto;
-            transform: translateX(0);
-        }
-
-        .nav-list {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .nav-button {
-            display: none;
-        }
-
-        
-    }
-
-    .nav-container.active {
-        transform: translate(0%);
-        backdrop-filter: blur(1rem);
-        background: rgba(33, 36, 40, 0.9);
-        width: 100vw;
-    }
-    
-    .social-icons {
-        font-size: 1.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      li:hover {
+        background-color: $secondary;
 
         a {
-            color: $secondary;
-            margin: 0rem .5rem;
+          color: $primary;
         }
+      }
+
+      @media (min-width: 768px) {
+        li {
+          padding: 1rem;
+          border: none;
+        }
+
+        li:hover {
+          background-color: transparent;
+
+          a {
+            color: $accent;
+          }
+        }
+      }
+
+      .from-right.active {
+        animation: fadeInRight 1s ease-in forwards;
+      }
+
+      @keyframes fadeInRight {
+        from {
+          opacity: 0;
+          transform: translateX(100%);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      .from-left.active {
+        animation: fadeInLeft 1s ease-in backwards;
+      }
+
+      @keyframes fadeInLeft {
+        from {
+          opacity: 0;
+          transform: translateX(-100%);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
     }
+  }
+
+  @media (min-width: 768px) {
+    .nav-container {
+      position: static;
+      height: auto;
+      width: auto;
+      transform: translateX(0);
+    }
+
+    .nav-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .nav-button {
+      display: none;
+    }
+  }
+
+  .nav-container.active {
+    transform: translate(0%);
+    backdrop-filter: blur(1rem);
+    background: rgba(33, 36, 40, 0.9);
+    width: 100vw;
+  }
+
+  .social-icons {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      color: $secondary;
+      margin: 0rem 0.5rem;
+    }
+
+    a:hover {
+      color: $accent;
+      transform: translateY(-10%);
+      transition: translate 300ms ease-in;
+    }
+  }
 }
 
-
-
-
-
-
 @media (min-width: 768px) {
-   .nav-container {
-        position: sticky;
-   }
+  .nav-container {
+    position: sticky;
+  }
 }

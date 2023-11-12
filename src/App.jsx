@@ -3,23 +3,15 @@ import HeroSection from "./components/HeroSection/HeroSection";
 import Navbar from "./components/Navbar/Navbar";
 import Projects from "./components/Projects/Projects"
 import Skills from "./components/Skills/Skills";
-
+import Contact from "./components/Contact/Contact"
 function App() {
   return (
-   <main className="bubbles">
+   <main>
     <Navbar/>
     <HeroSection/>
     <Skills/>
     <Projects/>
-    <Projects/>
-    <Projects/>
-    <Projects/>
-    <Projects/>
-    <Projects/>
-    <Projects/>
-    <Projects/>
-
-
+    <Contact />
    </main>
   )
 }

@@ -1,62 +1,64 @@
 @use "./components/SCSS/" as *;
 
-*,::before, ::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
 ul {
-    list-style-type: none;
-    font-family: $montserrat;
+  list-style-type: none;
+  font-family: $montserrat;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 body {
-    font-family: $poppins;
-    font-size: 18px;
-    background-color: $primary;
-    color: $secondary;
-    overflow-x: hidden;
+  font-family: $poppins;
+  font-size: 18px;
+  background-color: $primary;
+  color: $secondary;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar-track {
-    background: $primary; 
+  background: $primary;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: $secondary; 
-    border-radius: 1rem;
+  background: $secondary;
+  border-radius: 1rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: $accent; 
+  background: $accent;
 }
 
 // Phone size 375px
 .container {
-    width: min(100% - 0.5rem, 375px);
-    margin: 0 auto;
-    transition: 250ms ease-in-out;
+  width: min(100% - 0.5rem, 375px);
+  margin: 0 auto;
+  transition: 250ms ease-in-out;
 }
 
 // Tablet size 768
 @media (min-width: 768px) {
-    .container {
-        width: min(100% - 0.5rem, 768px);
-        margin: 0 auto;
-        transition: 250ms ease-in-out;
-    }
+  .container {
+    width: min(100% - 0.5rem, 768px);
+    margin: 0 auto;
+    transition: 250ms ease-in-out;
+  }
 }
 // Desktop size 1440px
 @media (min-width: 1080px) {
-    .container {
-        width: min(100% - 0.5rem, 1080px);
-        margin: 0 auto;
-        transition: 250ms ease-in-out;
-    }
+  .container {
+    width: min(100% - 0.5rem, 1080px);
+    margin: 0 auto;
+    transition: 250ms ease-in-out;
+  }
 }

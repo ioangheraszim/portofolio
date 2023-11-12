@@ -1,69 +1,61 @@
 @use "../SCSS/" as *;
 
 .skills-section {
+  .divider {
+    height: 110px;
+    background-image: url(/src/assets/images/mobile-divider.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
 
+  @media (min-width: 768px) {
     .divider {
+      margin: 0;
+      width: 100%;
+      background-image: url(/src/assets/images/dekstop-divider.svg);
+      background-size: 100%;
+    }
+  }
+
+  .contents {
+    margin: 5rem 0;
+    .skills-set {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 2rem;
+
+      p {
+        font-family: $poppins;
+        font-size: 1.5rem;
         margin-top: 1rem;
-        width: 360px;
-        height: 110px;
-        background-image: url(/src/assets/images/mobile-divider.svg);
-        background-size: 100%;
-        background-repeat: no-repeat;
+      }
+
+      img {
+        width: 100px;
+      }
     }
 
-    @media (min-width:768px) {
-        .divider {
-            margin: 0;
-            width: 100%;
-            background-image: url(/src/assets/images/dekstop-divider.svg);
-            background-size: 100%;
-        }
+    @media (min-width: 768px) {
+      .section-title {
+        text-align: start;
+      }
+
+      .skills-set {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+      }
     }
 
-    .contents {
-        margin: 5rem 0;
-        
-        .section-title {
-            margin: 2rem;
-            font-family: $montserrat;
-            color: $accent;
-            font-size: 3rem;
-            text-align: center;
-        }
-
-        .skills-set {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-            gap: 1rem;
-
-            p {
-                font-family: $poppins;
-                font-size: 1.5rem;
-                margin-top: 1rem;
-            }
-
-            img {
-                width: 100px;
-            }
-        }
-
-        @media (min-width: 768px){
-
-            .section-title {
-                text-align: start;
-            }
-
-            .skills-set {                
-                grid-template-columns: repeat(4, 1fr);
-                grid-template-rows: repeat(2, 1fr);
-            }
-
-        }
-
-        .skill-item {
-            padding: 2rem;
-            text-align: center;
-        }
+    .skill-item {
+      padding: 1rem;
+      text-align: center;
+      position: relative;
     }
+
+    // .skill-item:hover {
+    //     transform: translateY(-5%);
+    //     transition: transform ease-in 300ms;
+    // }
+  }
 }

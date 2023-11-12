@@ -18,8 +18,8 @@ function Navbar() {
   return (
     <header>
       <nav className='container navbar'>
-        <div>
-          <a href=''>MrEone</a>
+        <div className='logo-container'>
+          <a href=''>Mr<span>Eone</span></a>
         </div>
         <div className={`nav-container ${toggleNav ? "active" : ""}`}>
           <button className='nav-button close' onClick={closeNav}><FontAwesomeIcon icon={faX} /></button>
@@ -31,8 +31,8 @@ function Navbar() {
           </ul>
         </div>
         <div className='social-icons'>
-          <a target='_blank' href=''><FontAwesomeIcon icon={faGithub} /></a>
-          <a target='_blank' href=''><FontAwesomeIcon icon={faLinkedinIn} /></a>
+          <a target='_blank' href='https://github.com/ioangheraszim'><FontAwesomeIcon icon={faGithub} /></a>
+          <a target='_blank' href='https://www.linkedin.com/in/ioan-gheraszim/'><FontAwesomeIcon icon={faLinkedinIn} /></a>
           <button className='nav-button open' onClick={openNav} aria-label='navbar open'><FontAwesomeIcon icon={faBars} /></button>
         </div>
       </nav>

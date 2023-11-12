@@ -1,0 +1,160 @@
+@use "../SCSS/" as *;
+
+.project-wrapper.active {
+  border: 1px solid green;
+}
+
+.wrapper {
+  text-shadow: 2px 2px 2px $primary;
+
+  @media (min-width: 1080px) {
+    background-image: url(/src/assets/images/portblob1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40%;
+    border-radius: 0 5rem 0 5rem;
+  }
+
+  .project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+
+    @media (min-width: 1080px) {
+      margin-top: 7rem;
+      flex-direction: row;
+    }
+
+    &:nth-child(n + 3):nth-child(-n + 5) {
+      @media (min-width: 1080px) {
+        .project-title {
+          color: $accent;
+          text-shadow: none;
+        }
+      }
+    }
+
+    &:nth-child(odd) {
+      @media (min-width: 1080px) {
+        flex-direction: row-reverse;
+      }
+    }
+
+    img {
+      width: 100%;
+      @media (min-width: 768px) {
+        border-radius: 1rem;
+        width: 75%;
+      }
+    }
+
+    .info {
+      @media (min-width: 768px) {
+        border-radius: 1rem;
+        width: 75%;
+      }
+      padding: 1rem;
+      .project-title {
+        font-size: 2rem;
+        text-align: center;
+        text-shadow: 2px 2px 2px $primary;
+
+        @media (min-width: 768px) {
+          text-align: start;
+        }
+      }
+
+      .tech-stack {
+        display: flex;
+        align-items: center;
+
+        @media (min-width: 768px) {
+          justify-content: start;
+        }
+
+        justify-content: space-evenly;
+
+        p {
+          font-size: 1.5rem;
+          font-weight: 700;
+        }
+
+        .secondary {
+          margin-left: 1rem;
+        }
+      }
+
+      p {
+        font-size: 1.2rem;
+        text-align: justify;
+        padding: 1rem 0;
+      }
+
+      .the-btns {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+
+        @media (min-width: 768px) {
+          justify-content: start;
+        }
+
+        .code,
+        .live {
+          margin-right: 1rem;
+          margin-left: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .span {
+          margin-right: 1rem;
+          font-size: 2rem;
+        }
+
+        a {
+          border-radius: 1rem;
+          color: $secondary;
+          padding: 1rem 1rem;
+          font-size: 1.25rem;
+        }
+
+        a:hover {
+          box-shadow: 0px 0px 5px 1px $secondary;
+        }
+      }
+    }
+  }
+
+  .project.active {
+    animation: slide-left 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    &:nth-child(odd) {
+      animation: slide-right 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
+  }
+
+  @keyframes slide-left {
+    0% {
+      opacity: 0;
+      transform: translateX(30%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes slide-right {
+    0% {
+      transform: translateX(-30%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
