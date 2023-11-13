@@ -6,7 +6,7 @@ import ProjectItems from "../ProjectItems/ProjectItems";
 
 function Projects() {
   return (
-      <section className="container" id="projects">
+      <section className="container projects" id="projects">
         <div className="wrapper">
           <h2 className="section-title">Projects</h2>
           {projectsData.map((project) => (    

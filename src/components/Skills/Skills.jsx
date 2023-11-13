@@ -20,31 +20,31 @@ function Skills() {
         <h2 className='section-title'>Skills</h2>
         <ul className='skills-set'>
             <li className='skill-item'>
-              <img src={htmlImg} alt="" />
+              <img src={htmlImg} alt="HTML Logo" />
               <p>HTML</p>              
             </li>
             <li className='skill-item'>
-            <img src={cssImg} alt="" />
+            <img src={cssImg} alt="CSS Logo" />
               <p>CSS</p>              
             </li>
             <li className='skill-item'>
-            <img src={sassImg} alt="" />
+            <img  src={sassImg} alt="SCSS Logo" />
               <p>SCSS</p>              
             </li>
             <li className='skill-item'>
-            <img src={tailwindImg} alt="" />
+            <img  src={tailwindImg} alt="Tailwind Logo" />
               <p>Tailwind</p>              
             </li>
             <li className='skill-item'>
-            <img src={reactImg} alt="" />
+            <img src={reactImg} alt="React Js Logo" />
               <p>React Js</p>              
             </li>
             <li className='skill-item'>
-            <img src={javascriptImg} alt="" />
+            <img src={javascriptImg} alt="JavaScript Logo" />
               <p>JavaScript</p>              
             </li>
             <li className='skill-item'>
-            <img src={gitImg} alt="" />
+            <img src={gitImg} alt="Git Logo" />
               <p>Git</p>              
             </li>
         </ul>

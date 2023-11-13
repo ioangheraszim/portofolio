@@ -5,19 +5,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(/src/assets/images/hero-background1.jpg);
+  background-image: url(/src/assets/images/hero-background1.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 0%;
 }
-
 
 .video {
   width: 100%;
 }
 
 .content {
-  padding: 1rem 1rem;
+  padding: 2rem 1rem;
   background: rgba(33, 36, 40, 0.4);
   border-radius: 1rem 1rem 0 0;
   
@@ -58,12 +57,14 @@
     cursor: pointer;
     margin-top: 1rem;
     background-color: $accent;
-    color: #fff;
+    color: #FFF;
+    transform: scale(120%);
+    margin: 1rem 0rem 0rem 1rem;
   }
 
   .btn-resume:hover,
   .btn-contact:hover {
-    transform: scale(110%);
+    transform: scale(130%);
   }
 }
 
@@ -73,7 +74,7 @@
 
     .cta-btn {
       background-color: $accent;
-      color: $secondary;
+      color: #FFF;
       margin-right: 1rem;
     }
   }

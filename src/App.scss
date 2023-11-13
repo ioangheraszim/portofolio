@@ -26,6 +26,10 @@ body {
   overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+  width: .65rem;
+}
+
 ::-webkit-scrollbar-track {
   background: $primary;
 }
@@ -47,7 +51,7 @@ body {
 }
 
 // Tablet size 768
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .container {
     width: min(100% - 0.5rem, 768px);
     margin: 0 auto;
@@ -57,7 +61,7 @@ body {
 // Desktop size 1440px
 @media (min-width: 1080px) {
   .container {
-    width: min(100% - 0.5rem, 1080px);
+    width: min(100% - 0.5rem, 1320px);
     margin: 0 auto;
     transition: 250ms ease-in-out;
   }

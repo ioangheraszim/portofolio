@@ -3,6 +3,8 @@ import "./Navbar.scss"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { faBars, faX } from '@fortawesome/free-solid-svg-icons'
+import logo from "/src/assets/images/logo22.svg"
+
 function Navbar() {
 
   const [toggleNav, setToggleNav] = useState(false);
@@ -18,11 +20,12 @@ function Navbar() {
   return (
     <header>
       <nav className='container navbar'>
-        <div className='logo-container'>
-          <a href=''>Mr<span>Eone</span></a>
+        <div  className="logo-container">
+          <img src={logo} alt="mister e one logo icon" />
+          <a href='#' className="logo">Mr<span>Eone</span></a>
         </div>
         <div className={`nav-container ${toggleNav ? "active" : ""}`}>
-          <button className='nav-button close' onClick={closeNav}><FontAwesomeIcon icon={faX} /></button>
+          <button aria-label='navbar close' className='nav-button close' onClick={closeNav}><FontAwesomeIcon icon={faX} /></button>
           <ul className='nav-list'>
             <li onClick={closeNav} className={`${toggleNav ? 'from-right active' : 'from-right'}`}><a href="#">Home</a></li>
             <li onClick={closeNav} className={toggleNav ? 'from-left active' : 'from-left'}><a href="#skills">Skills</a></li>
@@ -31,8 +34,8 @@ function Navbar() {
           </ul>
         </div>
         <div className='social-icons'>
-          <a target='_blank' href='https://github.com/ioangheraszim'><FontAwesomeIcon icon={faGithub} /></a>
-          <a target='_blank' href='https://www.linkedin.com/in/ioan-gheraszim/'><FontAwesomeIcon icon={faLinkedinIn} /></a>
+          <a aria-label='my github' target='_blank' href='https://github.com/ioangheraszim'><FontAwesomeIcon icon={faGithub} /></a>
+          <a aria-label='my linkedin' target='_blank' href='https://www.linkedin.com/in/ioan-gheraszim/'><FontAwesomeIcon icon={faLinkedinIn} /></a>
           <button className='nav-button open' onClick={openNav} aria-label='navbar open'><FontAwesomeIcon icon={faBars} /></button>
         </div>
       </nav>

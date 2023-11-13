@@ -1,0 +1,119 @@
+@use "../SCSS/" as *;
+
+footer {
+  margin-top: 5rem;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 10px 10px 15px -3px rgba(0, 0, 0, 0.2),
+    -10px -10px 15px -5px rgba(255, 255, 255, 0.1);
+}
+
+.my-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    align-items:baseline;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: start;
+  }
+
+  .left-side {
+
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (min-width:768px) {
+            justify-content: start;
+        }
+        img {
+          margin-right: .5rem;
+          width: 35px;
+         
+          @media (min-width:768px) {
+            width: 50px;
+          }
+        }
+        .logo {
+          font-size: 1.5rem;
+          color: $secondary;
+          span {
+            color: $accent;
+          }
+        }
+    }
+
+    .email {
+      margin: 2rem 0;
+      font-size: 1.25rem;
+      span {
+        font-weight: 700;
+        a {
+          color: $secondary;
+        }
+
+        a:hover {
+          color: $accent;
+        }
+      }
+    }
+
+    .social-icons {
+      margin: 3rem 0rem;
+      a {
+        color: $secondary;
+        font-size: 2rem;
+        border-radius: 1rem;
+        padding: 1rem 1.5rem;
+        box-shadow: 5px 5px 10px -3px rgba(0, 0, 0, 0.2),
+          -5px -5px 15px -5px rgba(255, 255, 255, 0.1);
+      }
+
+      a:hover {
+        color: $accent;
+        box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.2),
+          inset -5px -5px 15px -5px rgba(255, 255, 255, 0.1);
+      }
+
+      .github {
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  .middle {
+    margin: 2rem 0;
+    ul {
+        display: flex;
+        flex-direction: column;
+        
+      @media (min-width:768px) {
+        align-items: start;
+        justify-content: space-between;
+      }
+
+      li {
+        padding: 1rem;
+
+        a {
+          color: $secondary;
+        }
+
+        a:hover {
+          color: $accent;
+        }
+      }
+    }
+  }
+
+  .right-side {
+    p {
+        margin: 2rem 0;
+    }
+  }
+}
