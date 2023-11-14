@@ -14,7 +14,7 @@ function HeroSection() {
                 <div className="container content">
                     {heroData.map((hero) => (
                         <div key={hero.id}>
-                            <h1 className="header-title">{hero.greet}<span className="accentuate">{hero.name}</span>.</h1>
+                            <h1 className="header-title">{hero.greet}<span className="accentuate"> {hero.name}</span>.</h1>
                             <p className="abouts">{hero.abouts}</p>
                             <div className="cta-btns">
                                 <a href="src/components/document/IoanGheraszim.pdf" download="Ioan Gheraszim" className="cta-btn btn-resume">Resume <FontAwesomeIcon icon={faFileArrowDown} /></a>
