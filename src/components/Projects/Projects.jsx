@@ -1,7 +1,7 @@
 import React from "react";
 import "./Projects.scss";
 
-import projectsData from "../data/projectsData";
+import { projectData } from "../data/data";
 import ProjectItems from "../ProjectItems/ProjectItems";
 
 function Projects() {
@@ -9,7 +9,7 @@ function Projects() {
       <section className="container projects" id="projects">
         <div className="wrapper">
           <h2 className="section-title">Projects</h2>
-          {projectsData.map((project) => (    
+          {projectData.map((project) => (    
             <ProjectItems key={project.id} {...project}/>
           ))}
         </div>

@@ -51,7 +51,7 @@ body {
 }
 
 // Tablet size 768
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .container {
     width: min(100% - 0.5rem, 768px);
     margin: 0 auto;

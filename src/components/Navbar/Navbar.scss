@@ -28,6 +28,10 @@ header {
       margin-right: .5rem;
       width: 35px;
 
+      @media (min-width:768px) {
+        width: 35px;
+      }
+
       @media (min-width:1080px) {
         width: 50px;
       }
@@ -100,12 +104,15 @@ header {
         li {
           padding: 1rem;
           border: none;
+
+          a { 
+            padding: 1rem;
+          }
         }
 
         li:hover {
           background-color: transparent;
           a {
-            border-radius: 1rem;
             color: $accent;
             transform: translateY(-10%);
             transition: translate 300ms ease-in;
