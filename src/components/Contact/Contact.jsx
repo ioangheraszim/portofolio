@@ -45,21 +45,21 @@ function Contact() {
         <form onSubmit={sendEmail} ref={form} className='contact-form'>
           <div className='input-wrapper'>
             <label htmlFor="name">Name</label>
-            <input type="text" placeholder='Enter your name here...' name="user_name"/>
+            <input type="text" placeholder='Enter your name here...' name="user_name" />
           </div>
           <div className='input-wrapper'>
             <label htmlFor="email">Email</label>
-            <input type="text" placeholder='Enter your email here...' name="user_email"/>
+            <input type="text" placeholder='Enter your email here...' name="user_email" />
           </div>
           <div className='input-wrapper'>
             <label htmlFor="subject">Subject</label>
-            <input type="text" placeholder='Email subject...' name="subject"/>
+            <input type="text" placeholder='Email subject...' name="subject" />
           </div>
           <div className='input-wrapper'>
             <label htmlFor="message">Your Message</label>
             <textarea name="message" placeholder='Enter message here...' cols="30" rows="10"></textarea>
           </div>
-          <button>Send Message <span className='arrow'><FontAwesomeIcon icon={faArrowRight}/></span></button>
+          <button type="submit">Send Message <span className='arrow'><FontAwesomeIcon icon={faArrowRight} /></span></button>
         </form>
       </div>
     </section>
