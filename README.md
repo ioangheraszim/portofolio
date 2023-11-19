@@ -48,8 +48,8 @@ Welcome to my portfolio! This repository showcases my skills, projects, and expe
 
 - Mobile and Tablet screenshot
 
-<img src="./src/assets/screenshots/mobile-screen.png" width="375px" />
-<img src="./src/assets/screenshots/tablet-screen.png" width="740px" />
+<img src="./src/assets/screenshots/mobile-screen.png" width="285px" />
+<img src="./src/assets/screenshots/tablet-screen.png" width="559px" />
 
 ## My process
 
