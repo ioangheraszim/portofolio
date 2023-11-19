@@ -46,10 +46,13 @@ Welcome to my portfolio! This repository showcases my skills, projects, and expe
 
 <img src="./src/assets/screenshots/desktop-screen.png" />
 
-- Mobile and Tablet screenshot
+- Mobile screenshot
 
-<img src="./src/assets/screenshots/mobile-screen.png" width="255px" />
-<img src="./src/assets/screenshots/tablet-screen.png" width="500px" />
+<img src="./src/assets/screenshots/mobile-screen.png"/>
+
+- Tablet screenshot
+
+<img src="./src/assets/screenshots/tablet-screen.png"/>
 
 ## My process
 
