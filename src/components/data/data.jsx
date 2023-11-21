@@ -4,6 +4,7 @@ import shortly from "/src/assets/images/shortly.svg";
 import blogr from "/src/assets/images/blogr.svg";
 import nailz from "/src/assets/images/nailz.svg";
 import aninet from "/src/assets/images/aninet.svg";
+import github from "/src/assets/images/github.svg";
 
 // Skills Images
 import htmlImg from "/src/assets/images/html.svg";
@@ -13,6 +14,9 @@ import sassImg from "/src/assets/images/sass.svg";
 import reactImg from "/src/assets/images/react.svg";
 import javascriptImg from "/src/assets/images/javascript.svg";
 import gitImg from "/src/assets/images/git.svg";
+import visual from "/src/assets/images/visual.svg";
+import vite from "/src/assets/images/vite.svg";
+import figma from "/src/assets/images/figma.svg";
 
 export const heroData = [
   {
@@ -61,6 +65,11 @@ export const skillsData = [
     id: 7,
     title: "Git",
     image: gitImg,
+  },
+  {
+    id: 8,
+    title: "GitHub",
+    image: github,
   },
 ];
 
