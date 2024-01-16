@@ -50,7 +50,7 @@ function Contact() {
           <h2>Ioan Gheraszim</h2>
           <div className='contact-text'>
             <p>Phone: <span>+44 7448280319</span></p>
-            <p>Email: <a href="mailto:">ioangheraszim@gmail.com</a></p>
+            <p>Email: <a href="mailto:">ioan.gheraszim@gmail.com</a></p>
           </div>
           <div>
           <p className='find-me'>Find me on</p>
