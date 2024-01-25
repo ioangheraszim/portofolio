@@ -13,7 +13,7 @@ function Footer() {
             <img src={logo} alt="mister e one logo icon" />
             <p className="logo">Mr<span>Eone</span></p>
           </a>
-          <p className="email">Email: <span><a href="mailto:ioangheraszim@gmail.com">ioangheraszim@gmail.com</a></span></p>
+          <p className="email">Email: <span><a href="mailto:ioan.gheraszim@gmail.com">ioan.gheraszim@gmail.com</a></span></p>
           <div className="social-icons">
               <a className="github" href=""><FontAwesomeIcon icon={faGithub}/></a>
               <a href=""><FontAwesomeIcon icon={faLinkedin}/></a>
