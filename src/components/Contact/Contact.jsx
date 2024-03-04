@@ -63,19 +63,19 @@ function Contact() {
         <form onSubmit={sendEmail} ref={form} className='contact-form'>
           <div className='input-wrapper'>
             <label htmlFor="name">Name</label>
-            <input onChange={handleInputChange} type="text" placeholder='Enter your name here...' name="user_name" required/>
+            <input id="name" onChange={handleInputChange} type="text" placeholder='Enter your name here...' name="user_name" required/>
           </div>
           <div className='input-wrapper'>
             <label htmlFor="email">Email</label>
-            <input onChange={handleInputChange} type="email" placeholder='Enter your email here...' name="user_email" required/>
+            <input id="email" onChange={handleInputChange} type="email" placeholder='Enter your email here...' name="user_email" required/>
           </div>
           <div className='input-wrapper'>
             <label htmlFor="subject">Subject</label>
-            <input onChange={handleInputChange} type="text" placeholder='Email subject...' name="subject" required/>
+            <input id="subject" onChange={handleInputChange} type="text" placeholder='Email subject...' name="subject" required/>
           </div>
           <div className='input-wrapper'>
             <label htmlFor="message">Your Message</label>
-            <textarea  name="message" placeholder='Enter message here...' cols="30" rows="10" required></textarea>
+            <textarea id="message" name="message" placeholder='Enter message here...' cols="30" rows="10" required></textarea>
           </div>
           <button type="submit">Send Message <span className='arrow'><FontAwesomeIcon icon={faArrowRight} /></span></button>
         </form>
