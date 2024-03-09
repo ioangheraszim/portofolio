@@ -10,8 +10,8 @@ function App() {
    <main>
     <Navbar/>
     <HeroSection/>
-    <Skills/>
-    <Projects/>
+    <Skills title="Skills"/>
+    <Projects title="Projects"/>
     <Contact />
     <Footer/>
    </main>

@@ -4,11 +4,11 @@ import "./Projects.scss";
 import { projectData } from "../data/data";
 import ProjectItems from "../ProjectItems/ProjectItems";
 
-function Projects() {
+function Projects({title}) {
   return (
       <section className="container projects" id="projects">
         <div className="wrapper">
-          <h2 className="section-title">Projects</h2>
+          <h2 className="section-title">{title}</h2>
           {projectData.map((project) => (    
             <ProjectItems key={project.id} {...project}/>
           ))}

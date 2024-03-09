@@ -3,12 +3,12 @@ import "./Skills.scss";
 
 import { skillsData } from "../data/data";
 
-function Skills() {
+function Skills({title}) {
   return (
     <section id="skills" className="container skills-section ">
       <div className="divider"></div>
       <div className="contents">
-        <h2 className="section-title">Skills</h2>
+        <h2 className="section-title">{title}</h2>
         <ul className="skills-set">
           {skillsData.map((skill) => (
             <li key={skill.id} className="skill-item">

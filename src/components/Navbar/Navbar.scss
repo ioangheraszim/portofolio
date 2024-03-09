@@ -90,6 +90,11 @@ header {
           padding: 2rem;
           color: $secondary;
         }
+        
+        .active {
+          font-weight: 700;
+          color: white;
+        }
       }
 
       li:hover {

@@ -16,32 +16,31 @@ footer {
   text-align: center;
 
   @media (min-width: 768px) {
-    align-items:baseline;
+    align-items: baseline;
     flex-direction: row;
     justify-content: space-between;
     text-align: start;
   }
 
   .left-side {
-
     .logo-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        @media (min-width:768px) {
-            justify-content: start;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media (min-width: 768px) {
+        justify-content: start;
+      }
+      img {
+        margin-right: 0.5rem;
+        width: 50px;
+      }
+      .logo {
+        font-size: 1.5rem;
+        color: $secondary;
+        span {
+          color: $accent;
         }
-        img {
-          margin-right: .5rem;
-          width: 50px;
-        }
-        .logo {
-          font-size: 1.5rem;
-          color: $secondary;
-          span {
-            color: $accent;
-          }
-        }
+      }
     }
 
     .email {
@@ -72,8 +71,12 @@ footer {
 
       a:hover {
         color: $accent;
-        box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.2),
-          inset -5px -5px 15px -5px rgba(255, 255, 255, 0.1);
+        background-image: linear-gradient(
+          315deg,
+          hsl(225deg 100% 9%) 60%,
+          hsl(224deg 66% 17%) 96%,
+          hsl(224deg 32% 25%) 100%
+        );
       }
 
       .github {
@@ -85,23 +88,39 @@ footer {
   .middle {
     margin: 2rem 0;
     ul {
-        display: flex;
-        flex-direction: column;
-        
-      @media (min-width:768px) {
+      display: flex;
+      flex-direction: column;
+
+      @media (min-width: 768px) {
         align-items: start;
         justify-content: space-between;
       }
 
       li {
-        padding: 1rem;
+        padding: 1rem 0;
 
         a {
+          position: relative;
           color: $secondary;
+        }
+
+        a::after {
+          content: "";
+          position: absolute;
+          height: 1px;
+          left: 0;
+          bottom: 0;
+          width: 0;
+          background: $accent;
+          transition: width 0.2s ease-in;
         }
 
         a:hover {
           color: $accent;
+        }
+
+        a:hover:after {
+          width: 100%;
         }
       }
     }
@@ -109,7 +128,7 @@ footer {
 
   .right-side {
     p {
-        margin: 2rem 0;
+      margin: 2rem 0;
     }
   }
 }

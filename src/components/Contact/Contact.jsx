@@ -55,8 +55,8 @@ function Contact() {
           <div>
           <p className='find-me'>Find me on</p>
           <div className='social-icons'>
-            <a target='blank_' className='github' href="https://github.com/ioangheraszim"><FontAwesomeIcon icon={faGithub}/></a>
-            <a target='blank_' className='linkedin' href="https://www.linkedin.com/in/ioan-gheraszim/"><FontAwesomeIcon icon={faLinkedin}/></a>
+            <a aria-label='GitHub' target='blank_' className='github' href="https://github.com/ioangheraszim"><FontAwesomeIcon aria-label='GitHub' icon={faGithub}/></a>
+            <a aria-label='LinkedIn' target='blank_' className='linkedin' href="https://www.linkedin.com/in/ioan-gheraszim/"><FontAwesomeIcon  aria-label='LinkedIn' icon={faLinkedin}/></a>
           </div>
           </div>
         </div>
