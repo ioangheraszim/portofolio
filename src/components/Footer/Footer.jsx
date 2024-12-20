@@ -30,7 +30,7 @@ function Footer() {
         </div>
         <div className="right-side">
           <h2>Copyright</h2>
-          <p>@MrEone 2023.</p>
+          <p>@MrEone 2025.</p>
           <p>All rights reserved.</p>
         </div>
       </div>
