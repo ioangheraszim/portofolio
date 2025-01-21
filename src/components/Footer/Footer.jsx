@@ -5,6 +5,8 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import logo from "/src/assets/images/logo22.svg"
 
 function Footer() {
+  const currentYear = new Date().getFullYear(); 
+
   return (
     <footer>
       <div className="container my-footer">
@@ -15,8 +17,8 @@ function Footer() {
           </a>
           <p className="email">Email: <span><a href="mailto:ioan.gheraszim@gmail.com">ioan.gheraszim@gmail.com</a></span></p>
           <div className="social-icons">
-              <a className="github" href=""><FontAwesomeIcon icon={faGithub}/></a>
-              <a href=""><FontAwesomeIcon icon={faLinkedin}/></a>
+              <a className="github" href="https://github.com/ioangheraszim"><FontAwesomeIcon icon={faGithub}/></a>
+              <a href="https://www.linkedin.com/in/ioan-gheraszim/"><FontAwesomeIcon icon={faLinkedin}/></a>
           </div>
         </div>
         <div className="middle">
@@ -30,7 +32,7 @@ function Footer() {
         </div>
         <div className="right-side">
           <h2>Copyright</h2>
-          <p>@MrEone 2025.</p>
+          <p>@MrEone {currentYear}.</p>
           <p>All rights reserved.</p>
         </div>
       </div>
