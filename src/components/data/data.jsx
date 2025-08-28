@@ -16,14 +16,15 @@ import javascriptImg from "/src/assets/images/javascript.svg";
 import gitImg from "/src/assets/images/git.svg";
 import visual from "/src/assets/images/visual.svg";
 import vite from "/src/assets/images/vite.svg";
-import figma from "/src/assets/images/figma.svg";
+import jest from "/src/assets/images/jest.svg";
+import sql from "/src/assets/images/sql.svg"
 
 export const heroData = [
   {
     id: 1,
     greet: "Nice to meet you! I'm",
     name: "Ioan Gheraszim",
-    abouts: `Based in the UK, I'm a front-end developer and Computer Science
+    abouts: `I'm a front-end developer and Computer Science
         graduate from the University of Bedfordshire, passionate about
         creating user-friendly websites and turning creative ideas into
         reality.`,
@@ -70,6 +71,26 @@ export const skillsData = [
     id: 8,
     title: "GitHub",
     image: github,
+  },
+  {
+    id: 9,
+    title: "VSCode",
+    image: visual
+  },
+  {
+    id: 10,
+    title: "Vite",
+    image: vite
+  },
+  {
+    id: 11,
+    title: "SQL",
+    image: sql,
+  },
+  {
+    id: 12,
+    title: "Jest",
+    image: jest,
   },
 ];
 
